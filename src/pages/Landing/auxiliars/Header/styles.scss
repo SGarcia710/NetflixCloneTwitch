@@ -1,0 +1,28 @@
+.LandingHeader {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  align-items: center;
+  padding: 16px 55px;
+  &__logo {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+  }
+  &__button {
+    height: fit-content;
+    background-color: #e52c12;
+    border-radius: 6px;
+    padding: 8px 14px;
+    &:hover {
+      cursor: pointer;
+    }
+    p {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}
