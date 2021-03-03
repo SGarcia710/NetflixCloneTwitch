@@ -1,0 +1,29 @@
+.SignupInput {
+  display: flex;
+  flex-direction: column;
+  &__text {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    color: white;
+    text-align: center;
+  }
+
+  .EmailContainer {
+    display: flex;
+    width: fit-content;
+    background: red;
+    align-self: center;
+    input {
+      padding: 16px 10px;
+      width: 400px;
+      outline: none;
+    }
+    .Button {
+      width: fit-content;
+      padding: 16px;
+      &__text {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

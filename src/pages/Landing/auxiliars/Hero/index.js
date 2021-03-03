@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import Header from '../Header';
+import SignupInput from '../SingupInput';
 
 function Hero() {
   return (
@@ -15,17 +16,7 @@ function Hero() {
         <h3 className="LandingHero__content--subtitle">
           Disfruta donde quieras. Cancela cuando quieras.
         </h3>
-        <h6 className="LandingHero__content--text">
-          ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o
-          reiniciar tu membresía de Netflix.
-        </h6>
-
-        <div className="EmailContainer">
-          <input type="text" placeholder="Email" />
-          <div className="Button">
-            <p className="Button__text">Comenzar {'>'}</p>
-          </div>
-        </div>
+        <SignupInput />
       </div>
     </div>
   );

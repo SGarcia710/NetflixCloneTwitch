@@ -31,29 +31,5 @@
       font-weight: 400;
       margin-bottom: 20px;
     }
-    &--text {
-      font-size: 1.2rem;
-      font-weight: 400;
-      margin-bottom: 16px;
-    }
-
-    .EmailContainer {
-      display: flex;
-      width: fit-content;
-      background: red;
-      align-self: center;
-      input {
-        padding: 16px 10px;
-        width: 400px;
-        outline: none;
-      }
-      .Button {
-        width: fit-content;
-        padding: 16px;
-        &__text {
-          font-size: 1.2rem;
-        }
-      }
-    }
   }
 }
