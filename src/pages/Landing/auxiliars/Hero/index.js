@@ -1,13 +1,13 @@
 import React from 'react';
 import './styles.scss';
-import Header from '../Header';
+import { LandingHeader } from '../../../../components';
 import SignupInput from '../SingupInput';
 
 function Hero() {
   return (
     <div className="LandingHero">
       <img className="LandingHero__bg" src="/images/home-bg.jpg" />
-      <Header />
+      <LandingHeader />
       <div className="LandingHero__content">
         <h1 className="LandingHero__content--title">
           Películas y series

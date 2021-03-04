@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { LandingPage, LoginPage } from '../pages';
+import { LandingPage, LoginPage, SelectProfilePage } from '../pages';
 
 function Router() {
   return (
@@ -10,6 +10,7 @@ function Router() {
           <LandingPage />
         </Route>
         <Route exact component={LoginPage} path="/login" />
+        <Route exact component={SelectProfilePage} path="/select-profile" />
       </Switch>
     </BrowserRouter>
   );

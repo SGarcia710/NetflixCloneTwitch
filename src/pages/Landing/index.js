@@ -4,6 +4,7 @@ import Divider from './auxiliars/Divider';
 import './styles.scss';
 import Section from './auxiliars/Section';
 import QnA from './auxiliars/QnA';
+import { Footer } from '../../components';
 
 function LandingPage() {
   return (
@@ -54,6 +55,7 @@ function LandingPage() {
       <Divider />
       <QnA />
       <Divider />
+      <Footer />
     </div>
   );
 }
