@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import styled from 'styled-components';
 import { Footer, LandingHeader } from '../../components';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const Container = styled.div`
   width: 100vw;
@@ -91,6 +92,8 @@ const Checkbox = styled.div`
   }
 `;
 function LoginPage(props) {
+  const authContext = useContext(AuthContext);
+
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState(false);
 
@@ -106,7 +109,13 @@ function LoginPage(props) {
     if (password === '') {
       setPasswordError(true);
     }
-    if (email !== '' && password !== '') props.history.push('/select-profile');
+    if (email !== '' && password !== '') {
+      authContext.login({
+        email,
+        password,
+        callback: () => props.history.push('/'),
+      });
+    }
   };
 
   useEffect(() => {

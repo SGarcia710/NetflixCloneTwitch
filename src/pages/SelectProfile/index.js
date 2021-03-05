@@ -9,10 +9,10 @@ const Container = styled.div`
     color: red;
   }
 `;
-function SelectProfilePage() {
+function SelectProfilePage(props) {
   return (
     <Container>
-      <h1>HOLA SELECCIONA TU PERFIL</h1>
+      <buttom onClick={() => props.history.push('/home')}>Ir al home</buttom>
     </Container>
   );
 }
