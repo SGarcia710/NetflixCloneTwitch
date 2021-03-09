@@ -7,7 +7,11 @@ import { GoTriangleDown } from 'react-icons/go';
 import { FaSearch } from 'react-icons/fa';
 
 const Container = styled.div`
-  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -44,11 +48,11 @@ const Link = styled.p`
   font-weight: ${(props) => (props.selected === true ? '700' : '400')};
   padding: 0 10px;
   font-size: 12px;
-  cursor: pointer;
   transition: 500ms;
 
   &:hover {
     color: gray;
+    cursor: pointer;
   }
 `;
 
